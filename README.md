@@ -1,2 +1,2 @@
-# MGGA
-This is the code of MGGA for medical image registration
+# MICCAI2025_SAMReg
+The code of our paper for MICCAI2025
