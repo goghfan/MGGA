@@ -1,31 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
-# 假设 transformer 在同一目录下，为了运行演示，我先注释掉 import 并用 Mock 代替
-# from .transformer import TwoWayTransformer 
-
-# Mock Transformer for demonstration (请替换回你的真实 import)
-class TwoWayTransformer(nn.Module):
-    def __init__(self, depth, embedding_dim, mlp_dim, num_heads):
-        super().__init__()
-    def forward(self, src, pos, query_embed):
-        # 返回假的 features
-        return None, src.transpose(1, 2) # (B, H*W, C) -> (B, C, H*W) 假设
-
-class ImplicitMLP(nn.Module):
-    def __init__(self, input_dim, hidden_dim, output_dim):
-        super(ImplicitMLP, self).__init__()
-        self.mlp = nn.Sequential(
-            nn.Linear(input_dim, hidden_dim),
-            nn.ReLU(),
-            nn.Linear(hidden_dim, hidden_dim * 2),
-            nn.ReLU(),
-            nn.Linear(hidden_dim * 2, output_dim)
-        )
-
-    def forward(self, x):
-        return self.mlp(x)
+from .transformer import TwoWayTransformer 
 
 class GeometricPerceptionReconstruction(nn.Module):
     def __init__(self, input_dim=256, low_rank_dim=32, original_size=(128, 512, 512), target_shape=(8, 32, 32)):
