@@ -44,6 +44,26 @@ MGGA is evaluated on brain MRI and abdominal CT registration tasks. Across the b
 - [IXI Dataset](https://brain-development.org/ixi-dataset/): a multi-site brain MRI dataset collected from healthy subjects.
 - [MICCAI FLARE 2022](https://flare22.grand-challenge.org/): an abdominal CT benchmark for robust multi-organ analysis.
 
+## References
+
+```bibtex
+@article{lamontagne2019oasis,
+  title={OASIS-3: longitudinal neuroimaging, clinical, and cognitive dataset for normal aging and Alzheimer disease},
+  author={LaMontagne, Pamela J and Benzinger, Tammie LS and Morris, John C and Keefe, Sarah and Hornbeck, Russ and Xiong, Chengjie and Grant, Elizabeth and Hassenstab, Jason and Moulder, Krista and Vlassenko, Andrei G and others},
+  journal={medrxiv},
+  pages={2019--12},
+  year={2019},
+  publisher={Cold Spring Harbor Laboratory Press}
+}
+@book{ma2023fast,
+  title={Fast and Low-Resource Semi-supervised Abdominal Organ Segmentation: MICCAI 2022 Challenge, FLARE 2022, Held in Conjunction with MICCAI 2022, Singapore, September 22, 2022, Proceedings},
+  author={Ma, Jun and Wang, Bo},
+  volume={13816},
+  year={2023},
+  publisher={Springer Nature}
+}
+```
+
 ## Notes
 
 This repository focuses on the research implementation and visual results of MGGA. The project will continue to be cleaned up and improved over time.
